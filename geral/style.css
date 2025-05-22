@@ -4,6 +4,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+    
 }
 
 header {
@@ -14,26 +16,67 @@ header {
     gap: 20px;
     font-size: larger;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
 }
 
-.wallpaper{
+header a {
+    color: rgb(250, 250, 250);
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+
+
+}
+
+.wallpaper {
     width: 100%;
     height: 100vh;
     background-size: cover;
     background-position: center;
+    z-index: -1;
+    position: absolute;
+    top: 0;
 }
 
-.inicial{
+.inicial {
     width: 550px;
     background-color: rgb(90, 134, 187);
     padding: 79px;
     display: flex;
     justify-content: center;
     align-items: center;
-  flex-direction: column;
-  border-radius: 60px;
+    flex-direction: column;
+    border-radius: 60px;
+    margin: 0;
+    height:70vh;
 }
 
-p{
+p {
     color: white;
+    line-height: 30px;
+}
+
+.inicial h1 {
+    color: white;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.inicial button {
+    background-color: rgb(255, 255, 255);
+    color: rgb(90, 134, 187);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: larger;
+    cursor: pointer;
+    margin-top: 50px;
+
+}
+
+
+.inicial button:hover {
+    background-color: rgb(90, 134, 187);
+    color: white;
+    transition: 0.6s;
 }
