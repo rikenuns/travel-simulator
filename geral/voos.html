@@ -1,25 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="voos.css">
+ <link rel="icon" type="image/png" href="../img/favicon.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Changa:wght@200..800&family=Itim&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
     <title>Travel Simulator</title>
 </head>
+
 <body>
-<div>
-    <h1>Travel Simulator</h1>
-    <p>A ferramenta desenvolvida tem como objetivo simular valores aproximados de passagens aéreas, tanto nacionais
-        quanto internacionais, de forma simples e intuitiva. O usuário pode selecionar:
-        A cidade de origem,
-        O destino (Brasil ou exterior),
-        A classe do voo (econômica ou executiva),
-        Com base nessas informações, a aplicação calcula uma estimativa de preço, considerando valores médios de
-        mercado. A interface é leve, responsiva e ideal para testes rápidos. </p>
 
-    <button>FAZER SIMULAÇÃO</button>
-
-
+    <div>
+    <img class="wallpaper" src="../img/wallpaper.jpg" alt="">
     
 </div>
+    <div class="geral">
+        <h1>Travel Simulator</h1>
+        <p>A ferramenta desenvolvida tem como objetivo simular valores aproximados de passagens aéreas, tanto nacionais
+            quanto internacionais, de forma simples e intuitiva. O usuário pode selecionar:
+            A cidade de origem,
+            O destino (Brasil ou exterior),
+            A classe do voo (econômica ou executiva),
+            Com base nessas informações, a aplicação calcula uma estimativa de preço, considerando valores médios de
+            mercado. A interface é leve, responsiva e ideal para testes rápidos. </p>
+        <label for="voos">
+            <select name="saida" id="saida">
+                <option value="">Selecione a cidade de origem</option>
+                <option value="Petrolina">Petrolina-PE</option>
+                <option value="Guarulhos">Guarulhos-SP</option>
+                <option value="Galeao">Geleão-RJ</option>
+
+            </select>
+
+            <select name="Destino" id="Destino">
+                <option value="">Selecione a cidade de Destino</option>
+                <option value="">Portugal</option>
+                <option value="">Brasilia</option>
+                <option value="">Chile</option>
+                <option value="">Salvador-BA</option>
+                <option value="">França</option>
+                <option value="">Estados Unidos</option>
+                <option value="">Argentina</option>
+                <option value="">Japão</option>
+                <option value="">Pará</option>
+            </select>
+        </label>
+
+        <label for="passageiros">Quantidade de passageiros:</label>
+        <select name="passageiros" id="passageiros">
+            <option value="">Selecione</option>
+            <option value="1">1 passageiro</option>
+            <option value="2">2 passageiros</option>
+            <option value="3">3 passageiros</option>
+            <option value="4">4 passageiros</option>
+            <option value="5">5 passageiros</option>
+            <option value="6">6 passageiros</option>
+        </select>
+
+
+        <div class="valores">
+
+
+        </div>
+
+    </div>
 </body>
+
 </html>
