@@ -20,7 +20,8 @@
     <img class="wallpaper" src="../img/wallpaper.jpg" alt="">
     
 </div>
-    <div class="geral">
+    <div class="geral
+    ">
         <h1>Travel Simulator</h1>
         <p>A ferramenta desenvolvida tem como objetivo simular valores aproximados de passagens aéreas, tanto nacionais
             quanto internacionais, de forma simples e intuitiva. O usuário pode selecionar:
@@ -29,16 +30,17 @@
             A classe do voo (econômica ou executiva),
             Com base nessas informações, a aplicação calcula uma estimativa de preço, considerando valores médios de
             mercado. A interface é leve, responsiva e ideal para testes rápidos. </p>
+            <div class="voos-form">
         <label for="voos">
             <select name="saida" id="saida">
                 <option value="">Selecione a cidade de origem</option>
-                <option value="Petrolina">Petrolina-PE</option>
+                <option value="">Petrolina-PE</option>
                 <option value="Guarulhos">Guarulhos-SP</option>
                 <option value="Galeao">Geleão-RJ</option>
 
             </select>
 
-            <select name="Destino" id="Destino">
+            <select name="Destino"  disabled id="Destino">
                 <option value="">Selecione a cidade de Destino</option>
                 <option value="">Portugal</option>
                 <option value="">Brasilia</option>
@@ -64,11 +66,15 @@
         </select>
 
 
-        <div class="valores">
-
-
+        
         </div>
 
+        <div class="valores">
+            <button > SIMULAR</button>
+            
+
+        </div>
+<img src="../img/avião.png" alt="">
     </div>
 </body>
 

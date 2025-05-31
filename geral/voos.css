@@ -20,5 +20,34 @@
 .geral p{
     font-size: larger;
     line-height:30px ;
+
 }
+.voos-form{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 90px;
     
+}
+
+.valores{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 70px;
+    
+    
+}
+
+.valores{
+    background-color: ;
+    padding: 50px;
+    text-decoration: none;
+}
+
+.voos-form{
+    margin-top: 45px;
+    gap:45px
+}
