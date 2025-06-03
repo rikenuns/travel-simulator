@@ -35,6 +35,7 @@ body {
     margin-top: 40px;
     position: relative;
     z-index: 1;
+ 
 }
 
 
@@ -87,6 +88,33 @@ h1 {
     background-color: #163d78;
     transform: translateY(-2px);
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+.btn-voltar {
+    position: fixed;
+    top: 24px;
+    left: 24px;
+    background-color: #4682b4;
+    color: #fff;
+    border: none;
+    padding: 12px 32px;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 16px rgba(70, 130, 180, 0.15);
+    transition: background 0.3s, color 0.3s, transform 0.2s;
+    margin: 0;
+    display: block;
+    letter-spacing: 1px;
+    z-index: 10;
+}
+
+.btn-voltar:hover {
+    background: #315c7c;
+    transform: translateY(-2px) scale(1.04);
 }
 
 
