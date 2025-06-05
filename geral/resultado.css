@@ -1,0 +1,96 @@
+body {
+    background-image: url('../img/wallpaper.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    font-family: 'Poppins', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.resultado-container {
+    max-width: 700px;
+    margin: 60px auto 0 auto;
+    padding: 2.5rem 2.5rem 2rem 2.5rem;
+    background: #3a7ca5;
+    border-radius: 22px;
+    color: #fff;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.resultado-container h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    letter-spacing: 2px;
+}
+
+.resultado-info {
+    font-size: 1.15rem;
+    margin-bottom: 2.2rem;
+    text-align: left;
+    width: 100%;
+    max-width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.resultado-info p {
+    margin: 0 0 1rem 0;
+    line-height: 1.7;
+    color: #fff;
+}
+
+.resultado-info span {
+    font-weight: 700;
+    color: #ffd700;
+    background: rgba(255,255,255,0.08);
+    padding: 2px 8px;
+    border-radius: 8px;
+}
+
+.btn-voltar {
+    background: #fff;
+    color: #3a7ca5;
+    border: none;
+    padding: 16px 40px;
+    border-radius: 14px;
+    font-size: 1.15rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    box-shadow: 0 4px 16px rgba(70, 130, 180, 0.10);
+    transition: background 0.3s, color 0.3s, transform 0.2s, box-shadow 0.3s;
+    margin: 0 auto;
+    display: block;
+    z-index: 10;
+    outline: none;
+}
+
+.btn-voltar:hover, .btn-voltar:focus {
+    background: #3a7ca5;
+    color: #fff;
+    transform: translateY(-2px) scale(1.04);
+    box-shadow: 0 8px 24px rgba(70, 130, 180, 0.18);
+}
+
+@media (max-width: 800px) {
+    .resultado-container {
+        max-width: 98vw;
+        padding: 1.2rem 0.5rem;
+    }
+    .resultado-info {
+        font-size: 1rem;
+        padding: 0.8rem 0.5rem;
+    }
+    .resultado-container h1 {
+        font-size: 2rem;
+    }
+}

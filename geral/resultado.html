@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultado da Simulação</title>
+    <link rel="stylesheet" href="resultado.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="resultado-container">
+        <h1>Resultado da Simulação</h1>
+        <div class="resultado-info">
+            <p>Origem: <span id="origem">Guarulhos-SP</span></p>
+            <p>Destino: <span id="destino">Portugal</span></p>
+            <p>Passageiros: <span id="qtd-passageiros">2</span></p>
+            <p>Valor total: <span id="valor-total">R$ 5.000,00</span></p>
+        </div>
+        <button id="btn-voltar" class="btn-voltar">Nova Simulação</button>
+    </div>
+    <script>
+        document.getElementById('btn-voltar').onclick = function () {
+            window.location.href = 'voos.html';
+        };
+    </script>
+</body>
+</html>
