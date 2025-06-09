@@ -47,13 +47,10 @@ body {
 }
 
 .resultado-info span {
-    font-weight: 700;
-    color: #f5f4ed;
-    background: rgba(255,255,255,0.08);
-    padding: 2px 8px;
-    border-radius: 8px;
+    font-weight: bold;
+    color: #fff; /* Ou #ffd700 para amarelo */
+    background: none;
 }
-
 .btn-voltar {
     background: #fff;
     color: #3a7ca5;
