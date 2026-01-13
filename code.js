@@ -1,13 +1,14 @@
 document.addEventListener('DOMContentLoaded', function () {
     var btnVoltar = document.getElementById('btn-voltar');
+    
     // Voltar para o início na tela de voos.html
     if (btnVoltar && window.location.pathname.includes('voos.html')) {
         btnVoltar.onclick = function () {
             window.location.href = 'index.html';
         };
     }
+    
     // Voltar para o início na tela index.html (caso exista)
-
     if (btnVoltar && window.location.pathname.includes('index.html')) {
         btnVoltar.onclick = function () {
             window.location.href = 'index.html';
@@ -15,7 +16,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // Botão simular (index)
-
     var btnSimular = document.getElementById('btn-simular');
     if (btnSimular) {
         btnSimular.onclick = function () {
@@ -24,10 +24,10 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // Lógica dos selects (voos)
-
     var selectSaida = document.getElementById('saida');
     var selectDestino = document.getElementById('Destino');
     var selectPassageiros = document.getElementById('passageiros');
+    
     if (selectSaida && selectDestino && selectPassageiros) {
         selectSaida.addEventListener('change', function () {
             if (this.value !== "") {
@@ -39,6 +39,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 selectPassageiros.value = "";
             }
         });
+        
         selectDestino.addEventListener('change', function () {
             if (this.value !== "") {
                 selectPassageiros.disabled = false;
@@ -63,7 +64,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     alert('Selecione todas as opções!');
                     return;
                 }
-
+                
                 var valorTotal = (valorSaida + valorDestino) * qtdPassageiros;
 
                 localStorage.setItem('origem', nomeSaida);
